@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f5" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imagebutton_detailinfo_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" 
+            android:onClick="onThumbImageButtonClicked"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imagebutton_detailinfo_thumb"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_detailinfo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:textColor="#ff333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview_detailinfo_exchangedcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已有0人兑换"
+                android:textColor="#ff6f9147"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textview_detailinfo_remaincount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余30件"
+                android:textColor="#ff717171"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_detailInfo_exchange_need_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagebutton_detailinfo_thumb"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/exchange_need"
+            android:textColor="#ff717171"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textview_detailInfo_exchange_need"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_detailInfo_exchange_need_title"
+            android:layout_margin="8dp"
+            android:textColor="#ff333333"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button_detailInfo_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_exchange_need"
+            android:background="@drawable/btn_2"
+            android:onClick="onCollectButtonClicked" />
+
+        <ImageView
+            android:id="@+id/imageview_detailInfo_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_exchange_need"
+            android:background="@drawable/ic_collect" />
+
+        <TextView
+            android:id="@+id/textview_detailInfo_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_exchange_need"
+            android:text="@string/collect"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button_detailInfo_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_exchange_need"
+            android:layout_toRightOf="@id/button_detailInfo_collect"
+            android:background="@drawable/btn_1"
+            android:onClick="onExchangedButtonClicked" />
+
+        <ImageView
+            android:id="@+id/imageview_detailInfo_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_exchange_need"
+            android:layout_toRightOf="@id/button_detailInfo_collect"
+            android:background="@drawable/ic_exchange" />
+
+        <TextView
+            android:id="@+id/textview_detailInfo_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_exchange_need"
+            android:layout_toRightOf="@id/button_detailInfo_collect"
+            android:text="@string/exchange_gift"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textview_detailInfo_desc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_detailInfo_collect"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/gift_desc"
+            android:textColor="#ff717171"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textview_detailInfo_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_desc_title"
+            android:layout_margin="8dp"
+            android:text="奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍奖品介绍"
+            android:textColor="#ff333333"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_detailInfo_separator_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textview_detailInfo_desc"
+            android:layout_marginTop="10dp"
+            android:background="#ffd8d8d5" />
+
+        <View
+            android:id="@+id/view_detailInfo_separator_2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/view_detailInfo_separator_1"
+            android:background="#ffeeeceb" />
+
+        <View
+            android:id="@+id/view_detailInfo_separator_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/view_detailInfo_separator_2"
+            android:background="#ffd8d8d5" />
+
+        <TextView
+            android:id="@+id/textview_detailInfo_recommend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_detailInfo_separator_3"
+            android:layout_margin="10dp"
+            android:text="@string/gift_recommend"
+            android:textColor="#ff717171"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_detailinfo_recommend_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_recommend_title"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_detailinfo_recommend_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_recommend_title"
+            android:layout_toRightOf="@id/imagebutton_detailinfo_recommend_1"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_detailinfo_recommend_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_recommend_title"
+            android:layout_toRightOf="@id/imagebutton_detailinfo_recommend_2"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_detailinfo_recommend_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_detailInfo_recommend_title"
+            android:layout_toRightOf="@id/imagebutton_detailinfo_recommend_3"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/imagebutton_detailinfo_recommend_1"
+            android:background="#00ffffff" />
+    </RelativeLayout>
+
+</ScrollView>

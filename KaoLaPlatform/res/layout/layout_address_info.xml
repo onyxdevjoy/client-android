@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f5" >
+
+    <RelativeLayout
+        android:id="@+id/layout_address_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/textview_address_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="收货信息"
+            android:textColor="#ffaeaeae"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_address_info_name_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_address_info_title"
+            android:layout_margin="10dp"
+            android:text="@string/consignee_name"
+            android:textColor="#ff717171"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_address_info_name_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_address_info_title"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/textview_address_info_name_title"
+            android:text="王小二"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/textview_address_info_name_value"
+            android:layout_toRightOf="@id/textview_address_info_name_title"
+            android:background="#ffd8d8d5" />
+
+        <TextView
+            android:id="@+id/textview_address_info_address_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_address_info_name_title"
+            android:layout_margin="10dp"
+            android:text="@string/delivery_address"
+            android:textColor="#ff717171"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_address_info_address_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_address_info_name_value"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/textview_address_info_address_title"
+            android:text="广州市天河区中山大道293号广东技术师范学院7栋210"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/textview_address_info_address_value"
+            android:layout_toRightOf="@id/textview_address_info_address_title"
+            android:background="#ffd8d8d5" />
+
+        <TextView
+            android:id="@+id/textview_address_info_phone_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_address_info_address_value"
+            android:layout_margin="10dp"
+            android:text="@string/contact_phone_number"
+            android:textColor="#ff717171"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_address_info_phone_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_address_info_address_value"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/textview_address_info_phone_title"
+            android:text="13450396556"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_address_info_operating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_address_info_container"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageview_address_info_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_address_edit" />
+
+        <TextView
+            android:id="@+id/textview_address_info_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/edit"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imageview_address_info_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_address_delete" />
+
+        <TextView
+            android:id="@+id/textview_address_info_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/delete"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_address_info_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/address_default"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layout_address_info_operating"
+        android:layout_marginLeft="10dp"
+        android:background="#ffd8d8d5" />
+
+</RelativeLayout>

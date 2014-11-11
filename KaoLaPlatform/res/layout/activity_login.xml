@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f5"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edittext_login_account"
+        style="@style/kl_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/input_account"
+        android:inputType="number"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edittext_login_password"
+        style="@style/kl_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/input_password"
+        android:textSize="15sp" 
+		android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_1"
+        android:onClick="onLoginButtonClicked"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:gravity="right"
+        android:onClick="onForgetPasswordButtonClicked"
+        android:text="@string/forget_password"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

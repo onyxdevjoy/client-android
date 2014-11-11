@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edittext_quick_exchange"
+        style="@style/kl_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/input_exchanged_captcha"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_quick_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_1"
+        android:onClick="onConfirmButtonClicked"
+        android:text="@string/exchange"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

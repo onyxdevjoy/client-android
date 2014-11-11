@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="white">#FFFFFFFF</drawable>
+    <drawable name="gainsboro">#DCDCDC</drawable>
+    <drawable name="kl_green">#ff70904b</drawable>
+    <drawable name="bg_transparent">#ff70904b</drawable>
+</resources>

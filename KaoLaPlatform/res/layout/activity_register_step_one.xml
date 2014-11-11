@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f5"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edittext_register_one_account"
+        style="@style/kl_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_account"
+        android:inputType="number"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_register_one_captcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edittext_register_one_account"
+        android:background="@drawable/btn_2"
+        android:onClick="onRequestCaptchaButtonClicked"
+        android:text="@string/request_captcha"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edittext_register_one_captcha"
+        style="@style/kl_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_register_one_account"
+        android:hint="@string/input_captcha"
+        android:inputType="number"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_register_one_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_register_one_captcha"
+        android:layout_toRightOf="@id/edittext_register_one_captcha"
+        android:background="@drawable/btn_1"
+        android:onClick="onConfirmButtonClicked"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

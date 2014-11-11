@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f5"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edittext_register_step_two_password"
+        style="@style/kl_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edittext_register_step_two_password_repeat"
+        style="@style/kl_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/input_password_repeat"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_register_step_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_1"
+        android:onClick="onRegisterButtonClicked"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

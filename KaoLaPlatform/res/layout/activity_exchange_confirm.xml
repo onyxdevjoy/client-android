@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_exchange_confirm_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/textview_exchange_confirm_name_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/consignee_name"
+            android:textColor="#ff717171"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_exchange_confirm_name_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/textview_exchange_confirm_name_title"
+            android:text="王小二"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/textview_exchange_confirm_name_value"
+            android:layout_toRightOf="@id/textview_exchange_confirm_name_title"
+            android:background="#ffd8d8d5" />
+
+        <TextView
+            android:id="@+id/textview_exchange_confirm_address_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_exchange_confirm_name_title"
+            android:layout_margin="10dp"
+            android:text="@string/delivery_address"
+            android:textColor="#ff717171"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_exchange_confirm_address_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_exchange_confirm_name_value"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/textview_exchange_confirm_address_title"
+            android:text="广州市天河区中山大道293号广东技术师范学院7栋210"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/textview_exchange_confirm_address_value"
+            android:layout_toRightOf="@id/textview_exchange_confirm_address_title"
+            android:background="#ffd8d8d5" />
+
+        <TextView
+            android:id="@+id/textview_exchange_confirm_phone_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_exchange_confirm_address_value"
+            android:layout_margin="10dp"
+            android:text="@string/contact_phone_number"
+            android:textColor="#ff717171"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_exchange_confirm_phone_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_exchange_confirm_address_value"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/textview_exchange_confirm_phone_title"
+            android:text="13450396556"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_exchange_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_1"
+        android:onClick="onExchangeConfirmButtonClicked"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

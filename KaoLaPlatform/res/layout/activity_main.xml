@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe8e7e3"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout_leftbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_leftbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_mainpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_mainpage"
+            android:onClick="onMainPageButtonClicked" />
+
+        <Button
+            android:id="@+id/button_usercenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_usercenter"
+            android:onClick="onUsercenterButtonClicked" />
+
+        <Button
+            android:id="@+id/button_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_collect"
+            android:onClick="onCollectButtonClicked" />
+
+        <Button
+            android:id="@+id/button_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_setting"
+            android:onClick="onSettingButtonClicked" />
+    </LinearLayout>
+
+    <com.onyx.international.views.SlideLayout
+        android:id="@+id/slidelayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffe8e7e3"
+        android:clickable="true" >
+    </com.onyx.international.views.SlideLayout>
+
+</RelativeLayout>
